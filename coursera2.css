@@ -1,0 +1,95 @@
+h1{
+    text-align: center;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-container{
+    width: 100%;
+    margin: auto;
+}
+
+#p1 h2{
+    background-color: pink;
+}
+#p2 h2{
+    background-color: #C14543;
+}
+#p3 h2{
+    background-color: #E5D197;
+}
+#p1,#p2,#p3{
+        background-color: #999999;}
+h2{
+ color: white;
+ font-weight: bold;
+ padding-left: 25px;
+ padding-right: 25px;
+ position: absolute;
+right: 0;
+top: 0;
+margin: auto;
+text-align: center;
+border-left: solid black;
+border-bottom: solid black;
+}
+    @media screen and ( min-width:992px){
+        .main{
+            display: flex;
+            justify-content: space-evenly;
+        }
+#p1,#p2,#p3{
+    position: relative;
+    height: fit-content;
+    width: 33%;
+   padding: 5px;
+   margin: 10px;
+    border: solid;  
+    background-color: grey;
+
+}
+
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        flex-wrap: wrap;
+    }
+    #p1,#p2{
+        position: relative;
+        height: fit-content;
+        width: 45%;
+       padding: 5px;
+       margin: 10px;
+        border: solid;  
+        background-color: grey;
+    
+    }
+    #p3{
+        position: relative;
+        height: fit-content;
+        width: 94%;
+       padding: 5px;
+       margin: 10px;
+        border: solid;  
+        background-color: grey;
+    
+    }
+}
+@media only screen and (max-width:767px){
+    #p1,#p2,#p3{
+        position: relative;
+        height: fit-content;
+        width: 95%;
+       padding: 5px;
+       margin: 10px;
+        border: solid;  
+        background-color: grey;
+    
+    }
+
+}
